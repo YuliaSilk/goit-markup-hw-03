@@ -421,7 +421,9 @@ ul {
   }
 
 /* progect-cards */
-
+.cards {
+    ;
+}
 .link-title {
     color:var(--title-text-color);
     font-weight: 500;
