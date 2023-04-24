@@ -38,8 +38,14 @@ padding:0 15px;
 }
 
 .header-style {
-    display: flex;
+    /* display: flex; */
     border-bottom: 1px solid  #e7e9fc;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+   
 }
 
 .header-nav {
@@ -51,6 +57,8 @@ gap: 40px;
 }
 
 .link-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--color-iris);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -72,28 +80,24 @@ gap: 40px;
 
 .site-nav {
     display: flex;
+    margin-left: 76px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.site-nav .item + .item {
-    background-color: #31d0aa;
-    margin-left: 40px;
-}
-/* .site-nav  li .item:not(:last-child) { 
-    margin-right: 40px;
-} */
- /* .site-nav .item { 
+
+.site-nav .item:not(:last-child) { 
     margin-right: 40px;
 }
- 
- */
 
-
-.site-nav .item {
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* margin-right: 40px; */
 }
 .site-nav li .item:last-child { 
     margin-right: 0;
@@ -103,7 +107,6 @@ gap: 40px;
 .site-nav .item:focus {
     color: var(--color-ocean);
 }
-
 
 .site-nav .link:hover, 
 .site-nav .link:focus {
@@ -115,13 +118,27 @@ gap: 40px;
     font-size: 16px;
     line-height: 1.5;
 }
+
 .address {
-    display: flex;
+    display:flex;
+    margin-left: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-style: normal;
 }
+
+.address .item {
+    display: block;
+}
+
 .active:hover,
 .active:focus {
     color: var(--color-ocean);
+}
+.address .item + .item {
+    margin-left: 40px;
 }
 
 /* main */
@@ -173,6 +190,17 @@ gap: 40px;
 
 .hide {
     display: none;}
+
+.list-about {
+    display: flex;
+    max-width: 1128px;
+}
+.list-about .item:not(:last-child) {
+padding-right: 12px;
+}
+.list-about .item:not(:first-child) {
+padding-left: 12px;
+}
 
 .section-title {
     color:var(--title-text-color);
