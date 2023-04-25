@@ -268,6 +268,7 @@ gap: 40px;
 
 /* What are we doing */
 .rectangle {
+    padding-bottom: 120px
 }
 
 .container-rectangle {
@@ -275,7 +276,7 @@ gap: 40px;
     margin: 0;
     gap: 24px; 
 }
-.container-rectangle .item {
+.rectangle-item {
     width: calc((100% - 48px)/3);
 }
 
